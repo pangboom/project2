@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4-Block To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="block important-urgent">
+            <h2>중요하고 긴급한 일</h2>
+            <ul id="important-urgent-list"></ul>
+            <input type="text" id="important-urgent-input" placeholder="할 일을 입력하세요">
+            <button onclick="addTask('important-urgent')">추가</button>
+        </div>
+        <div class="block important-not-urgent">
+            <h2>중요하지만 긴급하지 않은 일</h2>
+            <ul id="important-not-urgent-list"></ul>
+            <input type="text" id="important-not-urgent-input" placeholder="할 일을 입력하세요">
+            <button onclick="addTask('important-not-urgent')">추가</button>
+        </div>
+        <div class="block not-important-urgent">
+            <h2>긴급하지만 중요하지 않은 일</h2>
+            <ul id="not-important-urgent-list"></ul>
+            <input type="text" id="not-important-urgent-input" placeholder="할 일을 입력하세요">
+            <button onclick="addTask('not-important-urgent')">추가</button>
+        </div>
+        <div class="block not-important-not-urgent">
+            <h2>긴급하지도 중요하지도 않은 일</h2>
+            <ul id="not-important-not-urgent-list"></ul>
+            <input type="text" id="not-important-not-urgent-input" placeholder="할 일을 입력하세요">
+            <button onclick="addTask('not-important-not-urgent')">추가</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
